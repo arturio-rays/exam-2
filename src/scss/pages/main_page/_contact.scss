@@ -1,0 +1,25 @@
+.location {
+  height: 700px;
+}
+
+.contact {
+
+  &__holder {
+    max-width: 770px;
+    display: flex;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__imput-item {
+
+    &input {
+      border: none;
+      border-bottom: 1px solid $darkblue;
+      outset: none;
+    }
+  }
+}

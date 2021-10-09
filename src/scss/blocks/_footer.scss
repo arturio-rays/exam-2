@@ -1,0 +1,37 @@
+.footer {
+  padding: 50px 0;
+
+  &__holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
+
+
+.social {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: -10px;
+  }
+
+  &__item {
+    padding: 10px;
+  }
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid $white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    color: $white;
+  }
+}

@@ -1,0 +1,36 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+@import "icons";
+@import "mixins";
+@import "index";
+
+body {
+  font-family: $gotham;
+  color: $darkblue;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  max-width: 190px;
+  color: $darkgrey;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid $darkgrey;
+  padding: 18px 56px;
+
+  &:hover {
+    color: $white;
+    background-color: $darkblue;
+    transition: background 0.2s ease-in-out;
+  }
+
+}

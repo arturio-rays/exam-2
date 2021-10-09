@@ -1,0 +1,77 @@
+.about {
+
+  &__slider-holder {
+    min-height: 100vh;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slide {
+    min-height: 100vh;
+    background-position: 55%;
+    background-repeat: no-repeat;
+    background-color: -moz-linear-gradient( 45deg, rgb(85,183,255) 0%, rgb(126,90,255) 100%),
+    -webkit-linear-gradient( 45deg, rgb(85,183,255) 0%, rgb(126,90,255) 100%),
+    -ms-linear-gradient( 45deg, rgb(85,183,255) 0%, rgb(126,90,255) 100%);
+    opacity: 0.06;
+    z-index: -10;
+  }
+
+  &__slider-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 0.05;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 100;
+  }
+
+  &__subtitle {
+    display: block;
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+.slick-dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 0;
+  padding: 40px;
+}
+.slick-dots li {
+  margin: 0 8px;
+  padding: 20px;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  font-size: 0;
+  background: transparent;
+}
+
+.slick-dots .slick-active button {
+  background: #fff;
+}
